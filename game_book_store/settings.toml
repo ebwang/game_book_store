@@ -1,0 +1,4 @@
+name = "game_book_store"
+
+[database]
+url = "sqlite:///game_book_store.db"
