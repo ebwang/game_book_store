@@ -18,7 +18,6 @@ if __name__ == '__main__':
     #db = MySQL(app)
     #jogo_dao = JogoDao(db)
     #usuario_dao = UsuarioDao(db)
-
     @app.route('/')
     def index():
         list = get_games_from_database()

@@ -1,20 +1,21 @@
 [tool.poetry]
 name = "game-book-store"
 version = "0.1.0"
-description = ""
-authors = ["Eduardo <ewang@bionexo.com>"]
+description = "Game Book Store"
+authors = ["Eduardo Wang"]
 readme = "README.md"
 packages = [{include = "game_book_store"}]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "3.11.1"
 flask = "^2.2.2"
-flask-mysqldb = "^1.0.1"
 sqlmodel = "^0.0.8"
+pysqlite3 = "^0.5.0"
 dynaconf = "^3.1.11"
-flask-sqlalchemy = "^3.0.2"
-optional = "^0.0.1"
 
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^6.0.0"
 
 [build-system]
 requires = ["poetry-core"]
